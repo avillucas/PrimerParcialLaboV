@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/productoListarActivity">
+    app:startDestination="@id/usuarioListarActivity">
 
 
     <activity
-        android:id="@+id/productoListarActivity"
-        android:name="ar.com.avillucas.parcial1test.ProductoListarActivity"
-        android:label="activity_producto_listar"
-        tools:layout="@layout/activity_producto_listar" />
+        android:id="@+id/usuarioListarActivity"
+        android:name="ar.com.avillucas.parcial1test.UsuarioListarActivity"
+        android:label="activity_usuario_listar"
+        tools:layout="@layout/activity_usuario_listar" />
 </navigation>

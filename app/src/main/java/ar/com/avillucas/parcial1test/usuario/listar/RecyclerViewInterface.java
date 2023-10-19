@@ -1,4 +1,4 @@
-package ar.com.avillucas.parcial1test.producto.listar;
+package ar.com.avillucas.parcial1test.usuario.listar;
 
 public interface RecyclerViewInterface {
     void onItemClick(int posicion);

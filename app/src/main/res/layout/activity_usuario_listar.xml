@@ -5,25 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".ProductoListarActivity">
-<!--
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fitsSystemWindows="true">
-
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
+    tools:context=".UsuarioListarActivity">
+    <!--
+        <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize" />
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
 
-    </com.google.android.material.appbar.AppBarLayout>
--->
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+    -->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/productoslistarRecyclerView"
+        android:id="@+id/usuarioslistarRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-   />
+        />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

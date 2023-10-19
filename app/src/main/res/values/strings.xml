@@ -12,4 +12,8 @@
     <string name="invalidMessage">The validation failed!!!</string>
     <string name="amount">Amount: </string>
     <string name="price">Price: </string>
+    <string name="lblAdministrador">Administrator</string>
+    <string name="administrator">Administrator</string>
+    <string name="suscriber">Suscriber</string>
+    <string name="lblTipo">Type</string>
 </resources>
