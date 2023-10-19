@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">parcial1test</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="lblNombre">Enter your name</string>
+    <string name="hintNombre">Product 1</string>
+    <string name="lblCantidad">Amount</string>
+    <string name="hintCantidad">10</string>
+    <string name="lblPrecio">Price</string>
+    <string name="hintPrecio">10.0</string>
+    <string name="btnSave">Save</string>
+    <string name="invalidMessage">The validation failed!!!</string>
+    <string name="amount">Amount: </string>
+    <string name="price">Price: </string>
+</resources>

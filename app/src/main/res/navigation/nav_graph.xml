@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/productoListarActivity">
+
+
+    <activity
+        android:id="@+id/productoListarActivity"
+        android:name="ar.com.avillucas.parcial1test.ProductoListarActivity"
+        android:label="activity_producto_listar"
+        tools:layout="@layout/activity_producto_listar" />
+</navigation>
