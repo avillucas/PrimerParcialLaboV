@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:fontFamily="sans-serif-black"
-            android:text="Suscriptor" />
+            android:text="@string/suscriber" />
     </LinearLayout>
 
     <LinearLayout
@@ -30,12 +30,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <!-- TODO poner solo la imagen o ver -->
         <ImageView
+            android:id="@+id/linkOjo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:contentDescription="ojo" />
+android:src="@mipmap/"
+            android:contentDescription="@string/view" />
 
     </LinearLayout>
 </LinearLayout>

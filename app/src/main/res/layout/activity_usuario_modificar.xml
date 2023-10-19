@@ -6,6 +6,8 @@
     android:orientation="vertical"
     android:padding="20dp">
     <!-- views hijos -->
+
+
     <TextView
         android:id="@+id/lblNombre"
         android:layout_width="match_parent"
@@ -24,23 +26,35 @@
         android:textColorHint="#8D6E63"
         tools:ignore="VisualLintTextFieldSize" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/lblContrasenia"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/lblCantidad"
+            android:text="@string/lblPassword"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <EditText
             android:id="@+id/txtContrasenia"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hintCantidad"
+            android:hint="@string/hintContrasenia"
+            android:inputType="textPassword"
+            android:textColorHint="#8D6E63"
+            tools:ignore="Autofill,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <TextView
+            android:id="@+id/lblRepetirContrasenia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblRepeatPassword"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/txtRepetirContrasenia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintRepetirContrasenia"
             android:inputType="textPassword"
             android:textColorHint="#8D6E63"
             tools:ignore="Autofill,TouchTargetSizeCheck" />
@@ -74,20 +88,20 @@
                     android:text="@string/suscriber" />
             </RadioGroup>
         </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableStart="@mipmap/ic_launcher"
+                android:text="@string/btnSave"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </FrameLayout>
+
     </LinearLayout>
-
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <Button
-            android:id="@+id/bnSave"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:drawableStart="@mipmap/ic_launcher"
-            android:text="@string/btnSave"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-    </FrameLayout>
-</LinearLayout>

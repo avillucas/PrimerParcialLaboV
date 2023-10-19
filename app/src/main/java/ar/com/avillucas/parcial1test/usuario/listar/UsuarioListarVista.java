@@ -12,7 +12,7 @@ import ar.com.avillucas.parcial1test.R;
 import ar.com.avillucas.parcial1test.UsuarioModificarActivity;
 import ar.com.avillucas.parcial1test.usuario.core.Usuario;
 
-public class UsuarioListarVista implements RecyclerViewInterface {
+public class UsuarioListarVista {
 
     RecyclerView lista;
     Activity actividad;
@@ -30,17 +30,11 @@ public class UsuarioListarVista implements RecyclerViewInterface {
 
     public void cargarElementos() {
         List<Usuario> productos = this.controlador.traerListaProductos();
-        UsuarioAdapter adaptador = new UsuarioAdapter(productos, this);
+        UsuarioAdapter adaptador = new UsuarioAdapter(productos, this.controlador);
         lista = actividad.findViewById(R.id.usuarioslistarRecyclerView);
         lista.setAdapter(adaptador);
         LinearLayoutManager manejador = new LinearLayoutManager(this.actividad, LinearLayoutManager.VERTICAL, false);
         lista.setLayoutManager(manejador);
     }
 
-    @Override
-    public void onItemClick(int posicion) {
-        Intent intencion = new Intent(this.actividad, UsuarioModificarActivity.class);
-        intencion.putExtra(UsuarioModificarActivity.posicionActivityParameter, posicion);
-        this.actividad.startActivity(intencion);
-    }
 }

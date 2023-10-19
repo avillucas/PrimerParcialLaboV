@@ -1,10 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="ar.com.avillucas.parcial1test.MainActivity">
+    tools:context="ar.com.avillucas.parcial1test.UsuarioListarActivity">
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
-        android:title="Agregar"
+        android:title="@string/volver"
         app:showAsAction="never" />
 </menu>

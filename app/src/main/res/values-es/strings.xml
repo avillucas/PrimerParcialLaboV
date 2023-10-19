@@ -1,16 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">parcial1test</string>
     <string name="next">Siguiente</string>
     <string name="previous">Previo</string>
-    <string name="lblNombre">Ingrese el nombre</string>
-    <string name="hintNombre">Producto 1</string>
-    <string name="lblCantidad">Cantidad</string>
-    <string name="hintCantidad">10</string>
-    <string name="lblPrecio">Precio</string>
-    <string name="hintPrecio">10.0</string>
+    <string name="lblNombre">Usuario</string>
     <string name="btnSave">Guardar</string>
-    <string name="invalidMessage">¡¡ La validación falló !!</string>
-    <string name="amount">Cantidad: </string>
-    <string name="price">Precio: </string>
+    <string name="invalidMessage">La valdacion fallo!!!</string>
+    <string name="lblAdministrador">Administrador</string>
+    <string name="administrator">Administrador</string>
+    <string name="suscriber">Subscriptor</string>
+    <string name="lblTipo">Tipo</string>
+    <string name="lblPassword">Contraseña</string>
+    <string name="lblRepeatPassword">Repita Contraseña</string>
+    <string name="hintRepetirContrasenia">Repita Contraseña</string>
+    <string name="hintContrasenia">Contraseña</string>
+    <string name="hintNombre">Usuario</string>
 </resources>

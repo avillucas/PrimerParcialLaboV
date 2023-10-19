@@ -15,6 +15,7 @@ public class UsuarioModificarVista {
     Activity activity;
     EditText txtNombre;
     EditText txtContrasenia;
+    EditText txtRepetirContrasenia;
     RadioButton rbtAdministrador;
     RadioButton rbtSusucriptor;
     Button btnSave;
@@ -35,6 +36,7 @@ public class UsuarioModificarVista {
     public void cargarElementos() {
         this.txtNombre = activity.findViewById(R.id.txtNombre);
         this.txtContrasenia = activity.findViewById(R.id.txtContrasenia);
+        this.txtRepetirContrasenia = activity.findViewById(R.id.txtRepetirContrasenia);
         this.rbtAdministrador = activity.findViewById(R.id.rbtAdministrador);
         this.rbtSusucriptor = activity.findViewById(R.id.rbtSusucriptor);
         this.mostrarModelo();
