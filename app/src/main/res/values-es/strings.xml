@@ -10,8 +10,10 @@
     <string name="suscriber">Subscriptor</string>
     <string name="lblTipo">Tipo</string>
     <string name="lblPassword">Contraseña</string>
-    <string name="lblRepeatPassword">Repita Contraseña</string>
-    <string name="hintRepetirContrasenia">Repita Contraseña</string>
+    <string name="lblRepeatPassword">Repita la contraseña</string>
+    <string name="hintRepetirContrasenia">Repita la contraseña</string>
     <string name="hintContrasenia">Contraseña</string>
     <string name="hintNombre">Usuario</string>
+    <string name="volver">Volver</string>
+    <string name="view">Vista</string>
 </resources>
