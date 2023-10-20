@@ -40,7 +40,6 @@ public class UsuarioAdapter extends RecyclerView.Adapter<UsuarioViewHolder> {
         Usuario usuario = this.usuarios.get(position);
         TextView nombre = holder.itemView.findViewById(R.id.lblUsuarioNombre);
         TextView tipo = holder.itemView.findViewById(R.id.lblTipo);
-
         ImageView img = holder.itemView.findViewById(R.id.linkOjo);
         nombre.setText(usuario.getNombre());
         tipo.setText( usuario.getTipo().toString());
