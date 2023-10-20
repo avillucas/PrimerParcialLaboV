@@ -2,7 +2,6 @@ package ar.com.avillucas.parcial1test.usuario.core;
 
 import java.io.Serializable;
 
-import ar.com.avillucas.parcial1test.producto.core.Producto;
 
 public class Usuario implements Serializable {
 

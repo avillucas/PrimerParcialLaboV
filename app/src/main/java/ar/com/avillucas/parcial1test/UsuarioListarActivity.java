@@ -24,6 +24,7 @@ import ar.com.avillucas.parcial1test.usuario.listar.UsuarioListarVista;
 
 public class UsuarioListarActivity extends AppCompatActivity {
 
+    protected UsuarioListarVista vista;
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityUsuarioListarBinding actividadUsuarioListar;
@@ -31,8 +32,7 @@ public class UsuarioListarActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        //TODO  quedaria hacer que el adatapter notifyDatachange  o notify itemChange en caso de poder determiar cual es
-
+        this.vista.adaptador.notifyDataSetChanged();
 
     }
 
@@ -44,14 +44,14 @@ public class UsuarioListarActivity extends AppCompatActivity {
         setContentView(actividadUsuarioListar.getRoot());
 
         //TODO agregar toolbar
-       // setSupportActionBar(ActivityUsuarioListarBinding.toolbar);
-       // NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-       // appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-       // NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+        // setSupportActionBar(ActivityUsuarioListarBinding.toolbar);
+        // NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+        // appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
+        // NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
 
         UsuarioListarModelo modelo = new UsuarioListarModelo();
-        UsuarioListarVista vista = new UsuarioListarVista(this);
+        this.vista = new UsuarioListarVista(this);
         UsuarioListarControlador controlador = new UsuarioListarControlador(modelo, vista, this);
         vista.setControlador(controlador);
     }

@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -39,9 +40,11 @@ public class UsuarioAdapter extends RecyclerView.Adapter<UsuarioViewHolder> {
         Usuario usuario = this.usuarios.get(position);
         TextView nombre = holder.itemView.findViewById(R.id.lblUsuarioNombre);
         TextView tipo = holder.itemView.findViewById(R.id.lblTipo);
+
+        ImageView img = holder.itemView.findViewById(R.id.linkOjo);
         nombre.setText(usuario.getNombre());
         tipo.setText( usuario.getTipo().toString());
-        holder.itemView.setOnClickListener(v -> {
+        img.setOnClickListener(v -> {
             if (recyclerViewInterface != null) {
                 int pos = holder.getAbsoluteAdapterPosition();
                 if (pos != RecyclerView.NO_POSITION) {

@@ -34,7 +34,7 @@
             android:id="@+id/linkOjo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-android:src="@mipmap/"
+            android:drawableLeft="@android:drawable/ic_menu_edit"
             android:contentDescription="@string/view" />
 
     </LinearLayout>
